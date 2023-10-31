@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html style="@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');font-family: 'Lato', sans-serif; line-height: 1.5em; margin: 0; padding: 0;" lang="es">
+
+<div style="width: 100%; background-color: #F3F1F6;">
+    <table style="width: 650px; margin: auto; color: black;">
+        <tr>
+            <th style="color: white; background-color: #7B2C8F;">
+                <div style="background-color: white;">
+                    <img src="https://cortineriaconfort.com/wp-content/uploads/2023/05/Cortineria-confort-800x800.webp"
+                        alt="Logo cortinería confort." style="width: 150px;">
+                </div>
+                <h2 style="padding: 1em 1em 1em 1em;">¿Has tenido algun problema con tu compra?</h2>
+            </th>
+        </tr>
+        <tbody>
+            <tr>
+                <td style="background-color: white; padding: 2em 2em 2em 2em;">
+                    <h3 style="margin-bottom: 2em;">¡Hola <strong>{{customer.firstname}}</strong>!</h3>
+                    <p>¿Aún no pudiste realizar tu compra?<br>¡Te estamos esperando para que puedas llevarte y disfrutar
+                        de éstos fantásticos productos!</p><br>
+                    <h4>¡Mira lo que dejaste en el carrito!</h4><br>{{cart.product.table}}
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: white; padding: 2em 2em 2em 2em;">
+                    <p style="margin-bottom: 2em;">¡Aquí te dejamos el enlace para que puedas completar
+                        tu compra!</p>
+                    <a href="{{cart.checkout_url}}"
+                        style="padding: 1em 1em 1em 1em; color: white; background-color: #7B2C8F; border-radius: 2px; text-decoration: none;">Continuar
+                        comprando</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: white; padding: 2em 2em 2em 2em;">
+                    <h4>¡Pedilos antes de que se agoten!</h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 1em 1em 1em 1em; text-align: center;">
+                    <small style="color: #7B2C8F;">{{cart.unsubscribe}}</small>
+                </td>
+            </tr>
+            <tr>
+                <tfoot style="color: white; background-color: #7B2C8F;">
+                    <td style="padding: 2em 2em 2em 2em; text-align: center;">
+                        <small>Copyright © 2023 <strong>Cortinería Confort</strong></small>
+                    </td>
+                </tfoot>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</html>
